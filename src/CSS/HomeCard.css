@@ -1,0 +1,181 @@
+*{
+    font-family: 'Times New Roman', Times, serif !important;
+}
+.Header h1{
+    display: flex !important;
+    align-items: center !important ;
+    justify-content: center !important;
+    text-align: center !important;
+    color:aliceblue !important;
+    font-family: Georgia, 'Times New Roman', Times, serif !important;
+    font-size:100%;
+}
+.tit{
+  color: aliceblue !important;
+  padding-top: 20px;
+}
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    perspective: 1000px;
+    margin-top: 30px;
+    
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.9s;
+    transform-style: preserve-3d;
+    box-shadow: 3px 5px 25px 3px #292828cb;
+    background-color: rgb(253, 249, 249);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    
+    background-color: #2374aaa3;
+    color: whitesmoke !important;
+    border-radius: 10px;
+    /* border-top-right-radius: 30%;
+    border-bottom-left-radius: 30%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .front1{
+    border-top-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+    background-image: url('../Assets/blackcat.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: start !important;
+    color: salmon;
+    /* padding: 10px; */
+    /* color: rgb(233, 11, 11); */
+
+  }
+  .front2{
+    border-top-right-radius: 30%;
+    border-bottom-left-radius: 30%;
+    
+    background-image: url('../Assets/girl.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: salmon !important;
+    /* justify-content: end !important; */
+    /* align-items: start !important; */
+
+  }
+
+  .front3{
+    border-top-right-radius: 30%;
+    border-bottom-left-radius: 30%;
+    background-image: url('../Assets/Doc1.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white !important;
+
+  }
+
+  .front4{
+    border-top-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+    background-image: url('../Assets/contactCard.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+.back1{
+    border-top-left-radius: 30% !important;
+    border-bottom-right-radius: 30% !important;
+    background-image: url('../Assets/blackcat.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.back2{
+    border-top-right-radius: 30% !important;
+    border-bottom-left-radius: 30% !important;
+    background-image: url('../Assets/girl.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.back3{
+    border-top-right-radius: 30% !important;
+    border-bottom-left-radius: 30% !important;
+    background-image: url('../Assets/Doc1.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+} 
+
+
+.back4{
+    border-top-left-radius: 30% !important;
+    border-bottom-right-radius: 30% !important;
+    background-image: url('../Assets/contactCard.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    
+}
+
+
+  .flip-card-back {
+    background-color: rgba(80, 110, 173, 0.87);
+    color: white;
+    transform: rotateY(180deg);
+    border-radius: 10px;
+    /* border-top-left-radius: 30%;
+    border-bottom-right-radius: 30%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Card-button{
+
+    /* border: 1px solid rgba(250, 128, 114, 0.606) !important; */
+    /* margin-right: 3px !important; */
+    margin-left: 10px !important;
+    background-color: rgba(250, 128, 114, 0.675) !important;
+    color: black !important;
+    font-weight: bold !important;
+    /* background-color: blue !important; */
+    
+}
+.Card-button:hover{
+    /* color:rgba(250, 128, 114, 0.39) !important; */
+    background-color: rgba(0, 0, 0, 0.589) !important;
+    color: salmon !important;
+    font-weight: bold;
+    /* background-color: whitesmoke !important; */
+}

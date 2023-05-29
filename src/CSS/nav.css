@@ -1,0 +1,41 @@
+*{
+    font-family:'Raleway, Arial' !important;
+}
+.appbar{
+    /* background: transparent !important; */
+    /* background-color: rgb(46, 45, 45) !important; */
+    /* background-color: rgba(33, 32, 32, 0.822) !important; */
+    background-color: #29323c !important;
+
+}
+.appbar-container{
+    /* background: transparent !important; */
+
+}
+.nav-button{
+    margin-left: 10px !important;
+    font-weight: bold !important;
+    color: rgb(248, 247, 247) !important;
+    background-color: rgba(127, 123, 123, 0.575) !important;
+    /* border-color: rgb(249, 247, 247) !important; */
+    background-color: #485563 !important;
+    transition: all .5s !important;
+}
+.link{
+    color:white !important ;
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+
+.nav-button:hover{
+    transform: scale(0.98) !important;
+    background-color: salmon !important;
+    color: black !important;
+    font-weight: bold !important;
+    border-color: white !important;
+}
+.link:hover{
+    color:black !important;
+    font-weight: bold;
+}

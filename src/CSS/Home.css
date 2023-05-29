@@ -1,0 +1,27 @@
+.home-container{
+    /* margin-top: 20px !important; */
+    min-height: 90vh;
+}
+h2{
+    display: flex !important;
+    align-items: center !important ;
+    justify-content: end !important;
+    text-align: center !important;
+    color:rgb(220, 89, 68)!important;
+    font-family: Georgia, 'Times New Roman', Times, serif !important;
+    /* font-size:100%; */
+    margin: 0 !important;
+
+}
+
+.Header{
+    height: 70px;
+    width: 80%;
+    display: flex;
+    /* background-color: rgba(97, 93, 93, 0.455); */
+    border-radius: 20px;
+    /* align-items: center; */
+    /* justify-content: end; */
+    /* margin-right: 10% !important; */
+    
+}

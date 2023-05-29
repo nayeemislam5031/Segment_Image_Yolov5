@@ -1,0 +1,37 @@
+.yolosamplecard1{
+    background-image: url('../Assets/yolosample/trafic.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.yolosamplecard2{
+    background-image: url('../Assets/yolosample/elephant.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.yolosamplecard3{
+    background-image: url('../Assets/yolosample/table.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.yolosamplecard4{
+    background-image: url('../Assets/yolosample/persons.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.yolosamplecard5{
+    background-image: url('../Assets/yolosample/workshop.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.yolosamplecard6{
+    background-image: url('../Assets/yolosample/trafic1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}

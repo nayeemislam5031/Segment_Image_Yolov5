@@ -1,0 +1,79 @@
+.background_{
+    background-color: none !important;
+    background: transparent !important;
+}
+.titile{
+    text-align: center;
+    margin: 0;
+}
+
+.left-Side{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    width: 80%;
+    background-color: rgba(224, 220, 220, 0.435) !important;
+    color: black !important;
+    
+}
+p{
+    /* font-weight: bold; */
+    font-size: small;
+}
+
+.right-Side{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between !important;
+
+}
+
+.input{
+    margin-right: 5px !important;
+    margin-top: 10px;
+    height: 200px !important;
+    /* background-color: rgba(45, 44, 44, 0.497) !important; */
+}
+
+.output{
+    margin-left: 5px !important;
+    margin-top: 10px;
+    height: 200px !important;
+    /* background-color: rgba(45, 44, 44, 0.497) !important; */
+}
+
+.btn_area{
+    margin-top: 10px;
+}
+.button{
+    font-weight: bold !important;
+    color: rgb(248, 247, 247) !important;
+    background-color: rgba(26, 25, 25, 0.366) !important;
+    border-color: rgb(249, 247, 247) !important;
+    transition: all .5s !important;
+}
+.button:hover{
+    transform: scale(0.98) !important;
+    background-color: salmon !important;
+    color: black !important;
+    font-weight: bold !important;
+    border-color: white !important;
+}
+.centeByrow{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+.centerByCol{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}

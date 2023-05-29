@@ -1,0 +1,29 @@
+.contact-container{
+    height: 90vh;
+    background-color: black;
+    background-image: linear-gradient(to right, #1e242b , #38424d);
+}
+
+.title{
+    font-size:xx-large !important;
+    font-weight: 800 !important;
+    text-align: center;
+    padding: 40px;
+    color: azure;
+}
+
+h5{
+    margin: 0 !important;
+    font-size: medium !important;
+}
+.form{
+    background-color: rgba(245, 245, 245, 0.586) !important;
+    border-radius: 10px;
+}
+.name{
+    color: aliceblue !important;
+}
+
+.first-div{
+    width: 90%;
+}

@@ -1,0 +1,18 @@
+
+
+.tabs{
+    font-weight: bold !important;
+    font-size: small !important;
+    /* background: transparent !important;
+    background-color: none !important; */
+    color: aliceblue !important;
+
+}
+.background-img{
+
+    background-image:url('../Assets/backgoround7.jpg')!important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+
+}

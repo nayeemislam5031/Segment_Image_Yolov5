@@ -1,0 +1,92 @@
+[
+    {
+      "id": 1,
+      "name": "Cats and Dog",
+      "src": "../Assets/dogs.jpg",
+      "description": "In this picture Dogs are Segmentated",
+      "treshold":" Clip threshold is 0.78",
+      "predicted_iou_threshold" : " Predicted iou threshold is 0.99",
+      "stability_score_threshold":" Stability score threshold is 0.99",
+      "tags": ["nature", "mountain"]
+    },
+    {
+      "id": 2,
+      "name": "image2.jpg",
+      "url": "https://example.com/images/image2.jpg",
+      "description": "This is another example image",
+      "treshold":" Clip threshold is 0.78",
+      "predicted_iou_threshold" : " Predicted iou threshold is 0.99",
+      "stability_score_threshold":" Stability score threshold is 0.99",
+      "tags": ["beach", "ocean"]
+    },
+    {
+      "id": 3,
+      "name": "Cats and Dog",
+      "url": "../SampleImage/catsandog.png",
+      "description": "This is an example image",
+      "treshold":" Clip threshold is 0.78",
+      "predicted_iou_threshold" : " Predicted iou threshold is 0.99",
+      "stability_score_threshold":" Stability score threshold is 0.99",
+      "tags": ["nature", "mountain"]
+    },
+    {
+      "id": 4,
+      "name": "Cats and Dog",
+      "url": "../SampleImage/catsandog.png",
+      "description": "This is an example image",
+      "treshold":" Clip threshold is 0.78",
+      "predicted_iou_threshold" : " Predicted iou threshold is 0.99",
+      "stability_score_threshold":" Stability score threshold is 0.99",
+      "tags": ["nature", "mountain"]
+    },
+    {
+      "id": 5,
+      "name": "Cats and Dog",
+      "url": "../SampleImage/catsandog.png",
+      "description": "This is an example image",
+      "treshold":" Clip threshold is 0.78",
+      "predicted_iou_threshold" : " Predicted iou threshold is 0.99",
+      "stability_score_threshold":" Stability score threshold is 0.99",
+      "tags": ["nature", "mountain"]
+    },
+    {
+      "id": 6,
+      "name": "Cats and Dog",
+      "url": "../SampleImage/catsandog.png",
+      "description": "This is an example image",
+      "treshold":" Clip threshold is 0.78",
+      "predicted_iou_threshold" : " Predicted iou threshold is 0.99",
+      "stability_score_threshold":" Stability score threshold is 0.99",
+      "tags": ["nature", "mountain"]
+    },
+    {
+      "id": 7,
+      "name": "Cats and Dog",
+      "url": "../SampleImage/catsandog.png",
+      "description": "This is an example image",
+      "treshold":" Clip threshold is 0.78",
+      "predicted_iou_threshold" : " Predicted iou threshold is 0.99",
+      "stability_score_threshold":" Stability score threshold is 0.99",
+      "tags": ["nature", "mountain"]
+    },
+    {
+      "id": 8,
+      "name": "Cats and Dog",
+      "url": "../SampleImage/catsandog.png",
+      "description": "This is an example image",
+      "treshold":" Clip threshold is 0.78",
+      "predicted_iou_threshold" : " Predicted iou threshold is 0.99",
+      "stability_score_threshold":" Stability score threshold is 0.99",
+      "tags": ["nature", "mountain"]
+    },
+    {
+      "id": 9,
+      "name": "Cats and Dog",
+      "url": "../SampleImage/catsandog.png",
+      "description": "This is an example image",
+      "treshold":" Clip threshold is 0.78",
+      "predicted_iou_threshold" : " Predicted iou threshold is 0.99",
+      "stability_score_threshold":" Stability score threshold is 0.99",
+      "tags": ["nature", "mountain"]
+    }
+  ]
