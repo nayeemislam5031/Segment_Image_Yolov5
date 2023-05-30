@@ -13,14 +13,14 @@ const YoloImage = () => {
   const [imageFile, setImageFile] = useState(null);
   const [resultImage, setResultImage] = useState('');
   const [updisplayImg, setUpdisplayImg] = useState('');
-
+  
   
 
 // ********************Image Handle ***************
   const handleImageChange = (event) => {
     setImageFile(event.target.files[0]);
     setUpdisplayImg(URL.createObjectURL(event.target.files[0]));
-    // document.getElementById('image-upload').value = null;
+    
   };
   const handleClearImage = () => {
     setImageFile('')
@@ -60,6 +60,9 @@ const YoloImage = () => {
           })
         .catch(error => console.log('error', error));
 
+
+    
+  
 
 };  
 
