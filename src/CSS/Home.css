@@ -1,7 +1,17 @@
 .home-container{
     /* margin-top: 20px !important; */
     min-height: 90vh;
+    
 }
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .home-container{
+        padding-bottom: 40px !important;
+    }
+  }
+
+
+
 h2{
     display: flex !important;
     align-items: center !important ;

@@ -13,7 +13,7 @@ const YoloImage = () => {
   const [imageFile, setImageFile] = useState(null);
   const [resultImage, setResultImage] = useState('');
   const [updisplayImg, setUpdisplayImg] = useState('');
-  const [downloadImage, setdownloadImage] = useState('');
+
   
 
 // ********************Image Handle ***************
@@ -30,10 +30,8 @@ const YoloImage = () => {
   };
   
   const handleImageDownload = () => {
-    // setdownloadImage  (`data:image/png;base64,${resultImage}`);
-    // window.open(`data:image/png;base64,${resultImage}`);
-    // window.open(`data:image/png;base64, ${resultImage} + Base64.encode(out)`);
-    saveAs(downloadImage,'output.png');
+    
+    saveAs(`data:image/png;base64,${resultImage}`,'output.png');
     
   };
 
@@ -49,12 +47,7 @@ const YoloImage = () => {
         method: 'POST',
         body: formData,
         redirect: 'follow',
-      //   headers:{
-      //     'accept': 'application/json',
-      //     'Access-Control-Allow-Origin': "*",
-      //     'content-type': 'application/x-www-form-urlencoded',
-      //     'Access-Control-Allow-Credentials': 'true',
-      // }
+    
     };
 
     fetch(`http://land.zaisoft.io/yolo5_img`, requestOptions)
@@ -62,10 +55,12 @@ const YoloImage = () => {
         .then((result) => {
           console.log(result)
           setResultImage(result);
-          setdownloadImage  (`data:image/png;base64,${resultImage}`);
+          
           
           })
         .catch(error => console.log('error', error));
+
+
 };  
 
 
@@ -98,7 +93,7 @@ const YoloImage = () => {
           </Card>
         </Grid>
         <Grid  xs={12} md={5} className=''>
-          <Grid orientation="vertical" sx={{marginLeft:"20%", height: '100%', width: '100%' }} className=''>
+          <Grid orientation="vertical" sx={{marginLeft:"20%", height: '100%', width: '100%' }} className='cardareayoloimage'>
               <Card sx={{ borderRadius:"10px" ,height: 200, width: '300px' }} className='card centerByCol'>
                 {
                   updisplayImg?(

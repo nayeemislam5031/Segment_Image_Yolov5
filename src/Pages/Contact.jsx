@@ -29,43 +29,43 @@ const Contact = () => {
             <Button href = "mailto: nayeemisilam5031@gmail.com" target="_blank" sx={{color:'whitesmoke', height:'30px'}}> <AlternateEmailSharpIcon/> </Button>
           </div>
         </Grid>
-        <Grid xs={12} md={6}>
-        <Box
-          className='form'
-          component="form"
-          sx={{
-            '& .MuiTextField-root': { m: 1, width: '25ch' },
-            width:'80%'
-          }}
-        >
-          <div className='first-div'>
-          <TextField id="First-naem" label="First Name" variant="standard" />
-          <TextField id="Last-name" label="Last Name" variant="standard" />
-          <FormControl fullWidth sx={{ m: 1 }}>
-              <InputLabel htmlFor="Email">Email</InputLabel>
-              <Input
-                id="Email"
-                variant="standard"
-                type='string'
-              />
-            </FormControl>
-          </div>
-          <div >
-            <FormControl fullWidth sx={{m: 1, width:'90%'}}>
-              <InputLabel htmlFor="Coments">Coments</InputLabel>
-              <Input
-                id="Coments"
-                variant="standard"
-                type='string'
-              />
-            </FormControl>
-          </div>
-          <div style={{ display:'flex', alignItems:'center', justifyContent:'end', paddingRight:'10%'}}>
-          <Button sx={{color:'black', height:'30px', marginBottom:'30px', marginTop:'10px', right:'0'}} endIcon={<SendIcon />}>
-            Send
-          </Button>
-          </div>
-        </Box>
+        <Grid xs={12} md={6} className='fromcontroler'>
+          <Box
+            className='form'
+            component="form"
+            sx={{
+              '& .MuiTextField-root': { m: 1, width: '25ch' },
+              width:'80%'
+            }}
+          >
+            <div className='first-div'>
+            <TextField id="First-naem" label="First Name" variant="standard" />
+            <TextField id="Last-name" label="Last Name" variant="standard" />
+            <FormControl fullWidth sx={{ m: 1 }}>
+                <InputLabel htmlFor="Email">Email</InputLabel>
+                <Input
+                  id="Email"
+                  variant="standard"
+                  type='string'
+                />
+              </FormControl>
+            </div>
+            <div >
+              <FormControl fullWidth sx={{m: 1, width:'90%'}}>
+                <InputLabel htmlFor="Coments">Coments</InputLabel>
+                <Input
+                  id="Coments"
+                  variant="standard"
+                  type='string'
+                />
+              </FormControl>
+            </div>
+            <div style={{ display:'flex', alignItems:'center', justifyContent:'end', paddingRight:'10%'}}>
+            <Button sx={{color:'black', height:'30px', marginBottom:'30px', marginTop:'10px', right:'0'}} endIcon={<SendIcon />}>
+              Send
+            </Button>
+            </div>
+          </Box>
 
         </Grid>
       </Grid>

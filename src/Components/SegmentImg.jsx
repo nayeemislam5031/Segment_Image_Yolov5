@@ -61,9 +61,8 @@ const SegmentImg = () => {
   };
 
   const handleImageDownload = () => {
-    // setdownloadImage = `data:image/png;base64,${segresultImage}`;
-    // window.open(downloadImage, '_blank');
-    saveAs(downloadImage,'output.png');
+    
+    saveAs(`data:image/png;base64,${segresultImage}`,'output.png');
   };
   
   //submit function
@@ -96,7 +95,7 @@ const SegmentImg = () => {
               Segment Anything With (Clip)
       </Typography>
     <Grid container spacing={2} >
-      <Grid item xs={12} md={5} className='background_ left-Side'>
+      <Grid item xs={12} md={5} sx={{marginBottom:'30px'}} className='background_ left-Side'>
         <Card className='card' >
           <CardContent >
             <p>Predicted Iou Threshold</p>
@@ -168,7 +167,7 @@ const SegmentImg = () => {
               sx={{ height: 200, width: '100%' }}
               component="img"
               height="194"
-              // image={`data:image/png;base64,${resultImage}`}
+              
               image={`data:image/png;base64,${segresultImage}`}
               alt="Output"/>):(<p>Segmented Image</p>)
           }
@@ -176,34 +175,37 @@ const SegmentImg = () => {
         </Card>
       </Grid>
 
-
-      <Grid item xs={5} className='background_ centeByrow btn_area'>
+      <Grid className='right-Side ' sx={{width:'100%'}}>
+        <Grid item xs={5} className='background_ centeByrow btn_area'>
+            <ButtonGroup
+            disableElevation
+            variant="outlined" 
+            aria-label="text button group"
+            >
+            
+            <Button component="label" className='button'>
+              Upload
+              <input hidden accept="image/*" id='image-upload' multiple type="file" onChange={handleImageChange} />
+            </Button>
+            <Button startIcon={<DeleteIcon />} onClick={handleClearImage} className='button'>
+              Delete
+            </Button>
+          </ButtonGroup>
+        </Grid>
+        <Grid item xs={7} className='background_ centeByrow submit-btn'>
           <ButtonGroup
-          disableElevation
-          variant="outlined" 
-          aria-label="text button group"
+            disableElevation
+            variant="outlined" aria-label="text button group"
           >
-          
-          <Button component="label" className='button'>
-            Upload
-            <input hidden accept="image/*" id='image-upload' multiple type="file" onChange={handleImageChange} />
-          </Button>
-          <Button startIcon={<DeleteIcon />} onClick={handleClearImage} className='button'>
-            Delete
-          </Button>
-        </ButtonGroup>
+            <Button  endIcon={<SendIcon />}  onClick={handleSubmit} className='button'>
+              Send
+            </Button>
+            <Button className='button' endIcon={<DownloadIcon />} onClick={handleImageDownload}>Download </Button>
+          </ButtonGroup>
+        </Grid>
       </Grid>
-      <Grid item xs={7} className='background_ centeByrow'>
-        <ButtonGroup
-          disableElevation
-          variant="outlined" aria-label="text button group"
-        >
-          <Button  endIcon={<SendIcon />}  onClick={handleSubmit} className='button'>
-            Send
-          </Button>
-          <Button className='button' endIcon={<DownloadIcon />} onClick={handleImageDownload}>Download </Button>
-        </ButtonGroup>
-      </Grid>
+
+      
       
     </Grid>
   </Box>

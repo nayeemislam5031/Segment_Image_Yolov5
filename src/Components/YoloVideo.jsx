@@ -31,9 +31,10 @@ const handleVideoUpload = (event) => {
 };
 // ****************** Submit ****************************
 const handleClearVideo = () => {
-  // setUpVideo(null)
-  // setShowVideo('')
-  // document.getElementById('Video-upload').value = null;
+  setSelectedFile(null)
+  setDisplayvideo('')
+  setOutputUrl('')
+  document.getElementById('Video-upload').value = null;
 };
 const handleVideoDownload = () => {
   // window.open(resultVideo, '_blank');

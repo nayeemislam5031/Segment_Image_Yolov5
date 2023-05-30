@@ -4,6 +4,15 @@
      justify-content: center;
      padding: 5%;
 }
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .card-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+  }
 
 .samplecard{
     /* padding: 100px 0; */

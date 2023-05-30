@@ -6,13 +6,13 @@ import { Container, Grid } from "@mui/material";
 
 const Home = () => {
   return (
-    <Container sx={{ marginTop: '30px' }} className='home-container'>
+    <Container sx={{ marginTop: '30px'}} className='home-container'>
 
      
         
         <Grid xs={12} md={8} sx={{display:'flex', alignItems:'center', justifyContent:'center'}}>
         <div className='Header'>
-          <h2>A Comparative Study and Application of Segment Anything Model (SAM) with CLIP and YOLOv5</h2>
+          <h2>A Comparative Study and Application of YOLOv5 and Segment Anything Model (SAM) with CLIP</h2>
         </div>
         </Grid>
       
