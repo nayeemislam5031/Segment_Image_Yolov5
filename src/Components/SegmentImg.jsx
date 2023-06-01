@@ -78,7 +78,7 @@ const SegmentImg = () => {
         redirect: 'follow'
     };
 
-    fetch(`http://land.zaisoft.io/segmentIMG?predicted_iou_threshold=${floatValue1}&stability_score_threshold=${floatValue2}&clip_threshold=${floatValue3}&query=${stringValue}`, requestOptions)
+    fetch(`http://land.zaisoft.io/api/segmentIMG?predicted_iou_threshold=${floatValue1}&stability_score_threshold=${floatValue2}&clip_threshold=${floatValue3}&query=${stringValue}`, requestOptions)
         .then(response => response.text())
         .then((result) => {
           console.log(result)

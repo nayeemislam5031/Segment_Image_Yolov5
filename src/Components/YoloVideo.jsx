@@ -7,6 +7,7 @@ import gif from '../Assets/lauzhack-train.gif';
 import  '../CSS/Yolo5Video.css';
 import {saveAs} from 'file-saver';
 import  { useState } from 'react';
+import outputVideo from "../sam_clip_yolo/runs/detect/exp2/vid_result.mp4";
 
 const YoloVideo = () => {
   // const [upvideo, setUpVideo] = useState(null);
@@ -38,7 +39,7 @@ const handleClearVideo = () => {
 };
 const handleVideoDownload = () => {
   // window.open(resultVideo, '_blank');
-  // saveAs(downloadVideo,'output.mp4');
+  saveAs(outputVideo,'output.mp4');
 };
 
 const handleSubmit = async (event) => {
@@ -66,7 +67,7 @@ const handleSubmit = async (event) => {
     formData.append("file", selectedFile);
 
     try {
-      const response = await fetch("http://land.zaisoft.io/yolo5_vid", {
+      const response = await fetch("http://land.zaisoft.io/api/yolo5_vid", {
         method: "POST",
         body: formData,
       });
@@ -84,7 +85,7 @@ const handleSubmit = async (event) => {
     } catch (error) {
       console.error("Error:", error);
     }
-
+    
     
 };
 
@@ -97,33 +98,46 @@ const handleSubmit = async (event) => {
       
         <Grid container spacing={2}>
           <Grid item xs={12} md={7}  className='centeByrow ' >
-            <Grid className='Video-container'>
-                {selectedFile && (
+              {selectedFile?(
                 <video controls className='Video-container' autoPlay muted loop>
                   <source src={displayvideo} type="video/mp4" />
                 </video>
+              ):(<img src={gif}className='Video-container'></img>)}
+              {outputUrl && (
+                  <h2 style={{background: 'white', padding:'20px', marginLeft:'20px'}}> Download Now</h2>
+                )}
+          
+            {/* <Grid className='Video-container'>
+                {selectedFile && (
+                <video controls className='Video-container' autoPlay muted loop>
+                  <source src={displayvideo} type="video/mp4" />
+                  {
+                    outputUrl && (<p>Now You can Download</p> )
+                  } 
+                </video>
               )}
-            </Grid>
-            <Grid className='Video-container'>
+            </Grid> */}
+            {/* <Grid className='Video-container'>
                   {outputUrl && (
-                  <video controls className='Video-container' autoPlay loop>
-                    <source src={outputUrl} type="video/mp4" />
+                  <video controls className='Video-container'  >
+                    <source src={outputVideo} type="video/mp4" />
                   </video>
                 )}
-            </Grid>
-          {/* {
-          showVideo?(<video onChange={() => setLoading(!loading)} src={showVideo}  className='Video-container' placeholder=' Video' controls autoPlay loop ></video>):( <img src={gif} className='Video-container' alt="gif" placeholder='Example'></img> )
-        } */}
-        {/* {
-          selectedFile?(<video src={displayvideo}  className='Video-container' placeholder=' Video' controls autoPlay loop ></video>):(<img src={gif} className='Video-container' alt="gif" placeholder='Example'></img>)
-        } */}
-        
-          {/* {outputUrl && (
-            <video controls className='Video-container' autoPlay loop>
-              <source src={outputUrl} type="video/mp4" />
-            </video>
-          )} */}
+            </Grid> */}
+            {/* {
+              showVideo?(<video onChange={() => setLoading(!loading)} src={showVideo}  className='Video-container' placeholder=' Video' controls autoPlay loop ></video>):( <img src={gif} className='Video-container' alt="gif" placeholder='Example'></img> )
+            } */}
+            {/* {
+              selectedFile?(<video src={displayvideo}  className='Video-container' placeholder=' Video' controls autoPlay loop ></video>):(<img src={gif} className='Video-container' alt="gif" placeholder='Example'></img>)
+            } */}
+            
+              {/* {outputUrl && (
+                <video controls className='Video-container' autoPlay loop>
+                  <source src={outputUrl} type="video/mp4" />
+                </video>
+              )} */}
           </Grid>
+
           <Grid item xs={12} md={5}>
             <Grid  className='centeByrow'>
               <Card class="card1">

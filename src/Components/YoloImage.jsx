@@ -50,7 +50,7 @@ const YoloImage = () => {
     
     };
 
-    fetch(`http://land.zaisoft.io/yolo5_img`, requestOptions)
+    fetch(`http://land.zaisoft.io/api/yolo5_img`, requestOptions)
         .then(response => response.text())
         .then((result) => {
           console.log(result)
